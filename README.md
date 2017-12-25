@@ -1,2 +1,2 @@
 # LSTM-Gulong-novel-generation
-This a text generation based on LSTM
+This is a text generation model based on LSTM
