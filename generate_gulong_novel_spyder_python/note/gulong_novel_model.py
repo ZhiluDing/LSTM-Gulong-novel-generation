@@ -49,7 +49,7 @@ def create_lookup_tables(text):
 #40w字
 text = load_text('../input/多情剑客无情剑-古龙.txt')
 
-num_words = 1000
+num_words = 200000
 text = text[:num_words]
 
 line_train_text = text.split('\n')
@@ -88,9 +88,9 @@ print('unique words is {}'.format(len(vocab_to_int)))
 
 
 #训练循环次数
-num_epochs = 200
+num_epochs = 300
 
-batch_size = 4
+batch_size = 256
 
 rnn_size = 512
 
@@ -101,7 +101,7 @@ seq_length = 30
 #the number of rnn layers
 num_layers = 2
 
-learning_rate = 0.003
+learning_rate = 0.001
 
 show_every_n_batches = 20
 
